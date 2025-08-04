@@ -18,6 +18,7 @@ Python을 활용해 [금융감독원 Open API](http://finlife.fss.or.kr/)로부�
 ---
 
 ## 📁 프로젝트 구조
+```
 term_deposit/
 ├── visualise.py # 데이터 시각화
 ├── interest_rate_docx.py # 보고서 작성(docx)
@@ -36,6 +37,7 @@ term_deposit/
 │ ├── bond_data.xlsx
 │ └── bond.png    
 └── README.md
+```
 
 --
 ## 💵 주요 금리 지표
