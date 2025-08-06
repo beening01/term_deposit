@@ -23,8 +23,8 @@ term_deposit/
 ├── visualise.py # 데이터 시각화
 ├── interest_rate_docx.py # 보고서 작성(docx)
 ├── utils/
-│ ├── preprocess.py    # 경로 로드 및 api 정보 작성, 데이터 불러오기
-│ └── economic_data.py   # 데이터 불러오기(ecnomic_data, bond_data)
+│ ├── preprocess.py    # 경로 로드 및 api 데이터 불러오기
+│ └── init_docx.py   # docx 파일 초기화
 ├── img/
 │ ├── 산금채.png
 │ ├── 일반신용대출.png
@@ -32,10 +32,10 @@ term_deposit/
 │ ├── 정기적금.png
 │ └── 주택담보대출.png
 ├── output/
-│ ├── 
-│ ├── 
-│ ├── bond_data.xlsx
-│ └── bond.png    
+│ ├── ecos_interest.xlsx    # ecos 금리 데이터
+│ ├── fss.xlsx    #  fss 정기예금 상품 데이터
+│ ├── result.docx    # 결과 보고서
+│ └── mini_result.docx    # 미니 프로젝트 추가    
 └── README.md
 ```
 
@@ -66,3 +66,16 @@ term_deposit/
 소비자 입장에서는 저축·대출 전략을 세우는 데 매우 중요한 참고 자료가 됩니다.  
 따라서 본 보고서에서는 각 지표의 월별 추이와 변동폭을 직관적으로 확인할 수 있도록 시각화하여 제공합니다.
 
+---
+
+## 📑결과물
+![보고서 스크린샷](img/result_docx.png)
+
+---
+### 미니 프로젝트
+![미니프로젝트 스크린샷](img/result_mini.png)
+
+---
+## PLUS ALPHA
+cron을 활용한 깃허브에 월별 대출 금리 보고서 자동 업데이트 하기
+[금융감독원 Open API](https://github.com/beening01/loan)
